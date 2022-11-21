@@ -45,7 +45,7 @@ Dashboard > Manage Jenkins > Manage Credentials > System > Global Credentials > 
 ![](./img/d8.png)
 
 2. Create Task Definition
-Task definitions > create Task
+* Task definitions > create Task
   * Note: Container port is 8080, because the app is running on tomcat server
 
 ![](./img/d9.png)
@@ -58,25 +58,27 @@ Task definitions > create Task
 ![](./img/d11.png)
 
 4. Change the Health check port to listen on port 8080
-EC2 > target groups > Health check > Override
+* EC2 > target groups > Health check > Override
   * Note: if the port is not updated, ECS will keep deleting the task and creating another in a loop.
 
-![]()
+![](./img/d12.png)
 
-![]()
+![](./img/d13.png)
 
-![]()
+![](./img/d14.png)
 
 5. Update the load balancer security group to allow inbound traffic from anywhere on port 8080
 
-![]()
+![](./img/d15.png)
 
 6. Access the application on the browser via load balancer
-ECS > <your-cluster> > <your-service> > Networking > <ELB-DNS-name>
+* ECS > <your-cluster> > <your-service> > Networking > <ELB-DNS-name>
 
-![]()
+![](./img/d16)
 
 7. Run the pipeline script to deploy to ECS
-![]()
+![](./img/d17.png)
 
-![]()
+![](./img/d18.png)
+
+![](./img/d19.png)
