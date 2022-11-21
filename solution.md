@@ -72,9 +72,9 @@ Dashboard > Manage Jenkins > Manage Credentials > System > Global Credentials > 
 ![](./img/d15.png)
 
 6. Access the application on the browser via load balancer
-* ECS > <your-cluster> > <your-service> > Networking > <ELB-DNS-name>
+* `ECS > <your-cluster> > <your-service> > Networking > <ELB-DNS-name>`
 
-![](./img/d16)
+![](./img/d16.png)
 
 7. Run the pipeline script to deploy to ECS
 ![](./img/d17.png)
