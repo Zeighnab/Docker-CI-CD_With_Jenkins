@@ -72,7 +72,7 @@ Dashboard > Manage Jenkins > Manage Credentials > System > Global Credentials > 
 ![](./img/d15.png)
 
 6. Access the application on the browser via load balancer
-* ECS > cluster > service > Networking > ELB-DNS-name
+* ECS > {cluster} > {service} > Networking > {ELB-DNS-name}
 
 ![](./img/d16.png)
 
