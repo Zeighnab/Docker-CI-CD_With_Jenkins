@@ -4,15 +4,15 @@
 
 2. SSH into jenkins server, install docker engine(check documentation) and awscli, and add jenkins user to docker group
 
-![]()
+![](./img/d1.png)
 
 3. Create IAM User with `AmazonEC2ContainerRegistryFullAccess` and `AmazonECS_FullAccess` policies
 
-![](./img/d1.png)
+![](./img/d2.png)
 
 4. Create an ECR reposiory
 
-![](./img/d2.png)
+![](./img/d3.png)
 
 5. Login into jenkins on the browser and install plugins
 * Sonarqube Scanner
@@ -24,17 +24,19 @@
 * cloudBees Docker Build and Publish
 * pipeline:aws steps
 
+![](./img/d4.png)
+
 6. Store AWS Credentials(IAM user creds) in jenkins
 
 Dashboard > Manage Jenkins > Manage Credentials > System > Global Credentials > Add Credentials
 
-![](./img/d3.png)
+![](./img/d5.png)
 
 7. Run the pipeline script tp upload image in ECR
 
-![](./img/d4.png)
+![](./img/d6.png)
 
-![]()
+![](./img/d7.png)
 
 # Continuous Deployment/Delivery: Hosting our dockerized(containerized) application on Amazon ECS
 
