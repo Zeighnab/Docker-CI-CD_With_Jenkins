@@ -42,20 +42,20 @@ Dashboard > Manage Jenkins > Manage Credentials > System > Global Credentials > 
 
 1. Create a cluster in ECS (Use default options)
 
-![]()
+![](./img/d8.png)
 
 2. Create Task Definition
 Task definitions > create Task
   * Note: Container port is 8080, because the app is running on tomcat server
 
-![]()
+![](./img/d9.png)
 
 3. Create a Service. Task Definition is used in creating a task in the service
   * Note: When creating the service, an application load balancer(optional) was created. Also, security group was created for the load balancer
 
-![]()
+![](./img/d10.png)
 
-![]()
+![](./img/d11.png)
 
 4. Change the Health check port to listen on port 8080
 EC2 > target groups > Health check > Override
